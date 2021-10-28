@@ -15,8 +15,8 @@ def checkin(username, password):
     daka = "https://www.ablesci.com/site/login"
     driver = webdriver.Chrome()
     driver.get(daka)
-    driver.find_element_by_id("username").send_keys("{}").format(username)
-    driver.find_element_by_id("password").send_keys("{}").format(password)
+    driver.find_element_by_id("LAY-user-login-email").send_keys("{}").format(username)
+    driver.find_element_by_id("LAY-user-login-password").send_keys("{}").format(password)
     driver.find_element_by_xpath("/html/body/div[4]/div/div/form/div/div[1]/div/div/div/div/div/div[4]/button").click()
 
     sleep(3)
