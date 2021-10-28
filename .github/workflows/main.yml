@@ -6,8 +6,8 @@ name: ldjkdk
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-  schedule:
-      - cron: '10 16 * * *'
+#   schedule:
+#       - cron: '* * * * *'
   pull_request:
     branches: [ main ]
 
